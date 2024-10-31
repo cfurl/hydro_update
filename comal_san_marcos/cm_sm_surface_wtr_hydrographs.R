@@ -33,7 +33,7 @@ gages <- tibble (siteNo = c("08170500", "08168710", "08168913", "08168932"),
 # Loop throught collect discharge for 4 stations
 flow_list <- tibble()
 
-for (i in 1:length(gages)) {
+for (i in 1:length(gages$siteNo)) {
   
   siteNo <- gages[i,1] 
   start.date <- gages[i,2] 
